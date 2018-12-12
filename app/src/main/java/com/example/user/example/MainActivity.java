@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         addTable = (Button) findViewById(R.id.buttonAddTable);
         addRow = (Button) findViewById(R.id.buttonAddRow);
         container = (LinearLayout)findViewById(R.id.main);
-        container_row = (TableLayout)findViewById(R.id.secondXML);
+        container_row = (TableLayout)findViewById(R.id.scrolledtable);
 
         //
         addTable.setOnClickListener(new View.OnClickListener(){
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 container.addView(addView);
 
                 addTable.setEnabled(false);
+                //addRow.setEnabled(true);
             }});
 
         //
